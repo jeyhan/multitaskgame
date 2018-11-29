@@ -28,7 +28,7 @@
     "gulp-sass": "^2.0.4",
     "gulp-watch": "^4.3.4",
     "nodemon": "^1.4.0",
-    "gulp-embedlr": "^0.5.2",
+//     "gulp-embedlr": "^0.5.2",
     "gulp-livereload": "^3.8.0",
     "tiny-lr": "^0.1.6"
   }
