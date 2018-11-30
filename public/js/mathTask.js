@@ -94,7 +94,10 @@
     function finishRound(answer) {
         if (gameRunning) {
             flashAnswerFeedback(answer);
-            events.emit('taskAnswered', {answer: answer, source: "math"});
+            setTimeout(function () {
+                events.emit('taskAnswered', {answer: answer, source: "math"});
+            }, 110);
+
         }
     }
 
@@ -107,7 +110,7 @@
         $mathTaskContainer.addClass(taskClass);
         setTimeout(function () {
             $mathTaskContainer.removeClass(taskClass);
-        }, 200);
+        }, 100);
     }
 
     function stop() {

@@ -89,7 +89,9 @@
     function finishRound(answer) {
         if (gameRunning) {
             flashAnswerFeedback(answer);
-            events.emit('taskAnswered', {answer: answer, source: "visual"});
+            setTimeout(function () {
+                events.emit('taskAnswered', {answer: answer, source: "visual"});
+            }, 110);
         }
     }
 
@@ -98,11 +100,10 @@
         if (answer) {
             taskClass = 'greenTaskContainer';
         }
-
         $visualTaskContainer.addClass(taskClass);
         setTimeout(function () {
             $visualTaskContainer.removeClass(taskClass);
-        }, 200);
+        }, 100);
     }
 
     function stop() {
