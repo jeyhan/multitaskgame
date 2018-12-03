@@ -60,13 +60,13 @@ var gameRuner = (function () {
 
         if (typeOfGame === 1) {
             taskTotalRoundNumber = 20;
-            gameRoundTime = 3000;
+            gameRoundTime = 2000;
         } else if (typeOfGame === 2) {
             taskTotalRoundNumber = 20;
-            gameRoundTime = 3000;
+            gameRoundTime = 2000;
         } else if (typeOfGame === 3) {
             taskTotalRoundNumber = 10;
-            gameRoundTime = 6000;
+            gameRoundTime = 4000;
         }
     }
 
